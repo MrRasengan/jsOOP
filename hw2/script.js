@@ -49,7 +49,7 @@ manager.displayInfo(); // "Name: John Doe, Department: Sales"
 // Метод getTotalPrice() - возвращает общую стоимость заказа, основанную на ценах продуктов.
 
 class Product{
-  constructor(name, price, quantity){
+  constructor(name, price, quantity) {
     this.name = name;
     this.price = price;
     this.quantity = quantity;
@@ -57,9 +57,9 @@ class Product{
 }
 
 class Order {
+  products = [];
   constructor(id) {
     this.id = id;
-    this.products = [];
   }
 
   addProduct(product) {
